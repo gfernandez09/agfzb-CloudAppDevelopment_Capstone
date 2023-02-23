@@ -3,6 +3,10 @@ from django.contrib import admin
 from .models import CarMake, CarModel
 
 
+
+#TODO: Please use root as user name and root as password for your reviewer to login your app.
+
+
 # Register your models here.
 
 # CarModelInline class
@@ -14,6 +18,7 @@ class CarModelInline(admin.StackedInline):
 class CarModelAdmin(admin.ModelAdmin):
     list_display = ['name',  'dealer_id', 'c_type', 'year']
     search_fields = ['name']
+
 
 # CarMakeAdmin class with CarModelInline
 class CarMakeAdmin(admin.ModelAdmin):
