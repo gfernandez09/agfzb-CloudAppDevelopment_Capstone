@@ -1,5 +1,4 @@
 """IBM Cloud Function that gets all reviews for a dealership
-
 Returns:
     List: List of reviews for the given dealership
 """
@@ -10,10 +9,8 @@ import requests
 
 def main(param_dict):
     """Main Function
-
     Args:
         param_dict (Dict): input paramater
-
     Returns:
         _type_: _description_ TODO
     """
